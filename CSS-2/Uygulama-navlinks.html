@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0px;
+        }
+        .main-header__logo{
+            font-size: 30px;
+            font-weight:bold;
+            color: #fff;
+        }
+        .main-header{
+            background-color: coral;
+        }
+        .main-nav{
+            display: inline-block;
+          /* width: 89%;*/
+             width: calc(100% - 150px);
+        }
+        .main-nav-items{
+            text-align: right;
+        }
+        .main-nav-item{
+            display: inline-block;
+            padding-left: 10px;
+            padding-right: 10px;            
+        }
+        a{
+            text-decoration: none;
+            color: #fff;
+        }
+        ul a::before{
+            content:'\2022';
+        }
+        ul a:link{
+            color: blue;
+        }
+        ul  a:visited{
+            color: cyan;
+        }
+        ul a:hover{
+            color: blueviolet;
+            background-color: aquamarine;
+        }
+        ul a:active{
+            background-color: fuchsia;
+            color: #fff;
+        }
+        h1{
+            padding: 10px;
+            background-color: blue;
+            height: 500px;
+            color: #fff;
+            padding: 10px;
+        }
+        ::selection{
+            background-color: lawngreen;
+        }
+    </style>
+</head>
+<body>
+    <header class="main-header">
+        <a href="Uygulama-navlinks.html" class="main-header__logo">MovieApp</a>
+        <nav class="main-nav">
+            <ul class="main-nav-items">
+                <li class="main-nav-item"><a href="#"> Home</a></li>
+                <li class="main-nav-item"><a href="#"> Movies</a></li>
+                <li class="main-nav-item"><a href="#"> Contact</a></li>
+            </ul>
+         </nav>
+    </header>
+    <main>
+        <h1>Welcome to MovieApp</h1>
+    </main>
+
+
+</body>
+</html>

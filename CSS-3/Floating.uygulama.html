@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .header{
+            border: 20px solid blueviolet;
+            background-color: blueviolet;
+            color: yellow;
+        }
+        aside p{
+            border: 10px solid purple;
+            background-color: purple;
+            color: #fff;
+            margin: 15px;
+            padding-right: 15px;
+            
+        }
+        .main{
+            width: 80%;
+            float: left;
+        }
+        aside{
+            float: left;
+            width: 20%;
+        }
+        .footer{
+            border: 20px solid blueviolet;
+            background-color: blueviolet;
+            color: yellow;
+        }
+        .clearfix::after{
+            content:'';
+            display: block;
+            clear: both;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <h1>Header</h1>
+    </header>
+
+   <div class="clearfix test">
+    <aside class="aside">
+        <p>HTML</p>
+        <p>CSS</p>
+        <p>Javascript</p>
+    </aside>
+    <main class="main">
+        <h1>Komple Web Geliştirme Eğitimi</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A dolores odio fuga corporis velit quas eos aperiam animi! Provident omnis sit vero accusantium voluptatem hic, quisquam quaerat ipsum obcaecati sequi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Non alias nulla neque quia enim inventore ipsam, a eveniet sapiente est? Accusamus ex explicabo eius neque temporibus quae dolore, quis porro. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt saepe pariatur nam optio? Unde repudiandae, sed quasi officia tempora eligendi vel, doloremque quod accusamus quae soluta aliquam quia asperiores fugiat.
+        </p>
+    </main>
+    </div>
+    <footer class="footer">
+        <h1>Footer</h1>
+    </footer>
+</body>
+</html>

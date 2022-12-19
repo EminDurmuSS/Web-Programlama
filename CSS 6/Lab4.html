@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+             margin: 0px; 
+             /* background-color: brown; */
+        }
+        header{
+            display: block;
+            background-color: rgb(64, 61, 61);
+            
+        }
+        header a{
+            text-decoration: none;
+            color: #fff;
+            display: inline-block; 
+            padding: 20px;
+        }
+        aside{
+            background-color: brown;
+            float :left ;
+            width: 30%;
+            margin-right: 20px;
+            padding-left: 10px;
+            height: 750px;
+            color: #fff;
+        }
+        .box1{
+            background-color: gray;
+            width: 90%;
+            height: 20%;
+        }
+        .box2{
+            background-color: gray;
+            width: 90%;
+            height: 7%;
+            margin-bottom: 12px;
+        }
+        section{
+            float: left;
+            width: 60%;
+        }
+        .box3{
+            background-color: gray;
+            width: 110%;
+            height: 150px;
+        }
+        .clearfix::after{
+            content: "";
+            clear: both;
+            display: block;
+        }
+        @media(max-width: 700px){
+            header a{
+                display: block;
+                text-align: center;
+                
+            }
+            section{
+                float: none;
+                width: 100%;
+            }
+            aside{
+                float: none;
+                width: 100%;
+            }
+        }
+    </style>
+
+</head>
+<body>
+<div class="responsive">
+    <header>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+    </header>
+    <main class="clearfix">
+        <aside>
+            <h3>Hakkımda</h3>
+            <div class="box1"></div>
+            <p>Hakkımda bazı temel bilgiler..</p>
+            <h4>More text</h3>
+            <p>Lorem ipsum dolor sit amet.</p>
+            <div class="box2">Image</div>
+            <div class="box2">Image</div>
+            <div class="box2">Image</div>    
+        </aside>
+        <section>
+            <h2>Çalıştığım yerler</h2>
+            <div class="box3">image</div>
+            <p>içerik</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, nemo. Nihil distinctio explicabo veritatis dignissimos!</p>
+            <h2>Eğitimim</h2>
+            <div class="box3">image</div>
+            <p>içerik</p>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos eveniet natus quo pariatur excepturi illum at expedita ipsam, velit dolorum dolor placeat aut tempore magni doloribus ipsum suscipit dignissimos. Delectus?</p>
+        </section>
+    </main>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .grid{
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows:repeat(3,1fr) ;
+            height: 500px;
+        }
+        .header{
+            grid-column: 1/span 4;
+        }
+        .menu{
+            grid-column: 1/ span 2;
+            grid-row: 2/ span 2;
+            
+        }
+        .footer{
+            grid-column: 3/ span 2;
+        }
+        .box{
+            margin: 10px;
+            background-color: rgb(195, 195, 221);
+            
+            color: #fff;
+            text-align: center;
+            font-size: 25px;
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <div class="grid">
+        <div class="header box">Header</div>
+        <div class="menu box">Menu</div>
+        <div class="main box">Main</div>
+        <div class="footer box">Footer</div> 
+    </div>    
+
+
+</body>
+</html>

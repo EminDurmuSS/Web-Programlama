@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* Attribute selector*/
+        /* a[target]{
+            background-color: red;
+        }
+        a[class]{
+            background-color: blue;
+        }
+        [class]{
+            sayfa üzerinde klass olan hepsine ulaş
+        } 
+        */
+        /*
+        Amaç şu active kelimesi geçen bütün etiketlere
+        active-test te olabilir farketmez active kelimesini gördüğü an 
+        içersindeki cssleri uygular.
+        [class*="active"]{
+            background-color: black;
+        }
+        */
+        
+        /* Sadece active klası olanlar seçilir. 
+           yanında başka klaslarda olabilir.
+        [class~="active"]{
+            background-color: blue;
+        }
+        */
+        /*
+        [class|="active"]{
+            Aktive klası sadece başlangıçta olanlar seçilir
+            Active ile başliyacak ve tek olucak
+            background-color: blue;
+        }
+        */
+        /* [class^="active"]{
+             aktive sınıfına sahip olanı alır 
+            ve arada boşluk olsa yani başka klasta olsa 
+            sıkıntı olmaz 
+            active-lale de kabul eder 
+            background-color: blue;
+        }         */
+        /* [class$="active"]{
+            background-color: blue;
+            aktive klasını sonda arar ve 
+        } */
+        
+
+
+
+
+
+
+    </style>
+
+
+
+</head>
+<body>
+    <span class="active lale lales">text</span>
+    <nav>
+        <a href="" target="_blank">home</a>
+        <a href="" class="active">About</a>
+        <a href="" class="link">contact</a>
+    </nav>
+
+
+
+</body>
+</html>
